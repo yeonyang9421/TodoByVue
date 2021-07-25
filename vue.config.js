@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath: process.env.NODE_ENV === 'production' ? '/TodoByVue/' : '/',
     devServer: {
         proxy: {
             '^/api': {
@@ -9,4 +10,5 @@ module.exports = {
             },
         },
     },
+
 }

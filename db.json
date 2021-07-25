@@ -2,20 +2,20 @@
   "tasks": [
     {
       "id": "1",
-      "text": "Doctors Appointment",
-      "day": "March 5th at 2:30pm",
+      "text": "Vue 공부하기",
+      "day": "7월 24일 토요일 ",
       "reminder": true
     },
     {
       "id": "2",
-      "text": "Meeting with boss",
-      "day": "March 6th at 1:30pm",
+      "text": "React Native 공부하기",
+      "day": "7월 25일 일요일",
       "reminder": true
     },
     {
       "id": "3",
-      "text": "Food shopping",
-      "day": "March 7th at 2:00pm",
+      "text": "장보고 밑반찬 만들기",
+      "day": "7월 25일 오후 6시",
       "reminder": false
     }
   ]

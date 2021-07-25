@@ -5,10 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "backend": "json-server --watch db.json --port 5000"
+    "backend": "json-server --watch db.json --port 5000",
+    "publish": "npm run build && rm -rf docs; cp -r dist docs && sed -i -e 's@src=\\/@src=@g' docs/index.html ; sed -i -e 's@href=\\/@href=@g' docs/index.html"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "gh-pages": "^3.2.3",
     "json-server": "^0.16.3",
     "vue": "^3.0.0",
     "vue-router": "^4.0.4"
@@ -17,5 +19,6 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0"
-  }
+  },
+  "homepage": "https://yeonyang9421.github.io/TodoByVue/"
 }
